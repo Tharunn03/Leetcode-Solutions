@@ -48,7 +48,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void func(vector<int>& arr, int ptr)
+void func(vector<int>& arr, int ptr) // function to jumble upon the indeces.
 {
     int temp = arr[ptr];
     swap(arr[ptr], arr[temp]);
@@ -73,7 +73,7 @@ void print(vector<int>& arr)
 int main()
 {
     // input array
-    vector<int> nums = {0,2,1,5,3,4};
+    vector<int> nums = {0,2,1,5,3,4}; //sample array
 
     for (int i = 0; i < nums.size(); i++)
     {
@@ -82,9 +82,6 @@ int main()
             func(nums, i);
         }
     }
-
     print(nums);
-
-
     return 0;
 }
